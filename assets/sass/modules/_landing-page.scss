@@ -1,0 +1,52 @@
+.landing-page {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &__video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bgblue.png);
+    background-attachment: fixed;
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    background-image: url(../images/checks.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__menu {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* MEDIA QUERIES */
+@media (max-width: 880px) {
+  .landing-page {
+    &__video {
+    }
+    &__content {
+      padding: 30px;
+    }
+  }
+}

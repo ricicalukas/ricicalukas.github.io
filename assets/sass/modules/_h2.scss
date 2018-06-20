@@ -1,0 +1,15 @@
+.h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  &--white {
+    color: white;
+  }
+}
+@media (max-width: 1200px) {
+  .h2 {
+    margin-bottom: 0;
+    &--white {
+    }
+  }
+}

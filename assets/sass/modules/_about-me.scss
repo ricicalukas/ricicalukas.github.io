@@ -1,0 +1,159 @@
+.about-me {
+  background-image: url(../images/bgblue.png);
+  background-attachment: fixed;
+  padding: 100px;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  &__proffesion {
+    color: white;
+    text-align: left;
+    margin: 0;
+    line-height: 1;
+  }
+  &__slogan {
+    margin: 0;
+    margin-bottom: 30px;
+    color: white;
+    line-height: 1;
+    &--last {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__description {
+    color: white;
+    font-family: 'Average', serif;
+    max-width: 70%;
+    font-size: 28px;
+    color: white;
+    font-weight: normal;
+  }
+  &__text {
+    max-width: 70%;
+  }
+  &__img {
+    background-image: url(../images/headshot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 380px;
+    width: 380px;
+    min-width: 250px;
+    max-width: 30%;
+    overflow: hidden;
+  }
+}
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .about-me {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__proffesion {
+      text-align: center;
+      line-height: 1;
+    }
+    &__slogan {
+      margin: 0;
+      margin-bottom: 30px;
+      line-height: 1;
+      &--last {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    &__description {
+      max-width: 100%;
+      font-size: 24px;
+      color: white;
+      font-weight: normal;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1060px) {
+  .about-me {
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__proffesion {
+      text-align: left;
+      line-height: 1;
+      font-size: 40px;
+      text-align: center;
+    }
+    &__slogan {
+      margin: 0;
+      margin-bottom: 20px;
+      line-height: 1;
+      font-size: 24px;
+      &--last {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+    }
+    &__description {
+      max-width: 100%;
+      font-size: 20px;
+      color: white;
+      font-weight: normal;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+}
+@media (max-width: 660px) {
+  .about-me {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__proffesion {
+      text-align: left;
+      line-height: 1;
+      font-size: 32px;
+      text-align: center;
+    }
+    &__slogan {
+      margin: 0;
+      margin-bottom: 20px;
+      line-height: 1;
+      font-size: 20px;
+      &--last {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+    }
+    &__description {
+      max-width: 100%;
+      font-size: 20px;
+      color: white;
+      font-weight: normal;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+}

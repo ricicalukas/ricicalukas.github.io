@@ -1,0 +1,30 @@
+// vendor
+@import "vendor/normalize";
+
+// authored
+@import
+	"vars",
+	"mixins",
+	"base";
+
+// blocks
+@import
+	"modules/about-me.scss",
+	"modules/box.scss",
+	"modules/button.scss",
+	"modules/email-button.scss",
+	"modules/gallery.scss",
+	"modules/h2.scss",
+	"modules/h3.scss",
+	"modules/hr.scss",
+	"modules/icon.scss",
+	"modules/landing-page.scss",
+	"modules/loader.scss",
+	"modules/logo.scss",
+	"modules/menu.scss",
+	"modules/older-devices.scss",
+	"modules/scroll.scss",
+	"modules/slogan.scss",
+	"modules/social.scss",
+	"modules/text.scss",
+	"modules/work-container.scss";

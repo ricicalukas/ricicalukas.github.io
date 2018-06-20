@@ -1,0 +1,12 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__icon {
+    margin: 5px;
+    max-width: 100%;
+
+    & img {
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin-bottom: 10px;
+    display: inline;
+    &--last{
+      margin: 0!important;
+      padding: 5px 10px;
+      font-size: 16px;
+      background-color: $blue;
+      box-sizing: border-box;
+
+      &:hover {
+        color: white!important;
+      }
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 150ms ease-in-out;
+      margin-right: 20px;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .menu {
+    &__item {
+      margin-bottom: 10px;
+      &--last{
+        margin: 0!important;
+        padding: 5px 10px;
+        font-size: 14px;
+        &:hover {
+        }
+      }
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 150ms ease-in-out;
+        margin-right: 20px;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 880px) {
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/bg.png");
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    &.menu-active{
+      display: flex;
+      opacity: 1;
+    }
+    &__item {
+      display: block;
+      margin-bottom: 35px;
+      padding: 0;
+      &--last {
+        background-color: transparent;
+        margin-bottom: 0;
+
+        a {
+          margin: 0;
+        }
+      }
+      a {
+        color: black;
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+  }
+  .menu-toggle::before {
+    content: 'Explore';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-transform: uppercase;
+    z-index: 2000;
+    line-height: 1.5;
+  }
+  .menu-toggle.menu-active::before {
+    content: 'Close';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    text-transform: uppercase;
+    z-index: 2000;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,28 @@
+.logo {
+  font-size: 24px;
+  font-weight: 300;
+  display: inline-block;
+  text-align: left;
+  line-height: 1;
+  letter-spacing: 2px;
+
+  &--bold {
+    font-weight: 800;
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 880px) {
+  .logo {
+    font-size: 24px;
+    font-weight: 300;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 2px;
+
+    &--bold {
+      font-weight: 800;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 0;
+  &__small {
+    display: block;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+  &__big {
+    font-size: 72px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    white-space: nowrap;
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1340px) {
+  .slogan {
+    &__small {
+      font-size: 32px;
+      font-weight: 500;
+    }
+    &__big {
+      font-size: 64px;
+      font-weight: 100;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .slogan {
+    &__small {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    &__big {
+      font-size: 48px;
+      font-weight: 100;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 925px) {
+  .slogan {
+    &__small {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &__big {
+      font-size: 32px;
+      font-weight: 100;
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .slogan {
+    &__small {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &__big {
+      font-size: 24px;
+      font-weight: 100;
+      line-height: normal;
+    }
+  }
+}
+@media (max-width: 510px) {
+  .slogan {
+    &__small {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &__big {
+      font-size: 20px;
+      font-weight: 100;
+      line-height: normal;
+    }
+  }
+}

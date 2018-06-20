@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+}
+html{
+	width: 100%;
+	max-width:100%!important;
+	overflow-x: hidden!important;
+}
+body {
+	background-image: url("../images/bg.png");
+	background-attachment: fixed;
+	color:$lightGrey;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:0;
+	max-width:100%!important;
+	overflow-x: hidden!important;
+}
+footer {
+	background-image: url("../images/brno.jpg");
+	background-attachment: fixed;
+	padding: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+section {
+	width: 1520px;
+	margin: auto;
+	max-width: 100%;
+}
+h1, h2, h3 {
+	font-weight:800;
+	text-transform: uppercase;
+}
+
+h1 {
+	margin: 0;
+	font-size: 72px;
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	font-size: 64px;
+	color: $blue;
+}
+
+h3 {
+	font-size: 32px;
+	color: $blue;
+}
+
+h4 {
+	font-size: 32px;
+	color: $blue;
+}
+
+h5 {
+	font-size: 24px;
+	color: $blue;
+}
+
+h6 {
+	font-size: 22px;
+	color: $blue;
+}
+
+p {
+	font-weight:500;
+}
+a {
+	text-decoration: none;
+}
+:focus {
+    outline: 0;
+}
+#travels {
+	width: 100vw;
+	padding: 160px 10%;
+	background-color: white;
+}
+#work {
+	padding: 160px 0;
+}
+.is-showing {
+  transform: translate(0,0)!important;
+  opacity: 1!important;
+}
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+	#travels {
+		padding: 70px 10%;
+	}
+	#work {
+		padding: 70px 0;
+	}
+	h2 {
+		font-size: 48px;
+	}
+	footer {
+		padding: 100px;
+	}
+}
+@media (max-width: 660px) {
+	#travels {
+		padding: 30px 10%;
+	}
+	#work {
+		padding: 30px 0;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	footer {
+		padding: 50px;
+	}
+}
+@media (max-width: 400px) {
+	footer {
+		padding: 30px;
+	}
+}
